@@ -1,5 +1,18 @@
 /*===== GOOGLE FONTS =====*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@font-face {
+  font-family: poppins_regular;
+  src: url(fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: poppins_semibold;
+  src: url(fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+@font-face {
+  font-family: poppins_bold;
+  src: url(fonts/Poppins-Bold.ttf) format("truetype");
+}
 
 /*===== VARIABLES CSS =====*/
 :root{
@@ -25,6 +38,96 @@
 *,::before,::after{
   box-sizing: border-box;
 }
+body{
+  font-family: 'poppins_regular';
+}
+/* login page  start*/
+.login_panel{
+  height: 100vh;
+  display: flex;
+}
+.login_container{
+  /* margin: 0px 25px 0px 25px; */
+  /* height: calc(100vh - 30px); */
+  display: flex;
+  align-items: center;
+ justify-content: space-around;
+ background: #fff;
+}
+.login_pos{
+  width:100%;
+}
+.login_details{
+  width: 380px;
+  margin: auto;
+}
+.cpy_logo{
+  display: flex;
+  justify-content: center;
+}
+.login_header{
+  display: flex;
+  font-size: 28px;
+  font-family: poppins_regular;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.login_password{
+  padding-top: 25px;
+}
+.login_button{
+  padding-top: 25px;
+}
+
+.login_btn{
+  width: 100%;
+  font-size: 18px;
+  outline: none;
+  border: 0;
+  height: 40px;
+  border-radius: 30px;
+  background: #0E3F55 !important;
+  color: #ffff !important;
+}
+.iSolve_logo{
+  margin-top: 40px;
+  text-align: center;
+}
+.pwd_by{
+  font-size: 9px;
+  color: #000;
+  padding-left: 40px;
+  margin-bottom: -5px;
+  font-family: poppins_semibold;
+}
+@media (max-width:991px){
+  .login_img{
+      display: none !important;
+  }
+}
+@media (max-width:500px){
+  .login_details{
+      width: 310px;
+      margin: auto;
+  }
+}
+.login_img{
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items:center;
+}
+
+
+
+
+
+/* login page  end*/
+
+
+
+
+
 body{
   position: relative;
   margin: 0;
@@ -642,5 +745,30 @@ margin: auto;
   .dropdown:hover .dropbtn {
     background-color: #3e8e41;
   }
-  
-    
+ .center_content{
+  padding: 15px 15px 15px 15px;
+ }
+ /* selectpicker start */
+ .select_picker button.btn.dropdown-toggle.btn-light {
+   outline: 0px !important;
+   border: 1px solid #000;
+  }
+  .select_picker .btn-light:active:focus{
+  box-shadow: none !important;
+  outline: none !important;
+ }
+ .select_picker .dropdown-menu .show{
+   width: 100%;
+  }
+  .select_picker .bootstrap-select .dropdown-menu li a span.text {
+    display: inline-block;
+    white-space: break-spaces;
+  }
+  .select_picker .bootstrap-select .dropdown-toggle .filter-option-inner-inner{
+    text-overflow: ellipsis;
+  }
+  .select_picker .dropdown-menu .inner .show{
+    height: 260px;
+    overflow: auto;
+  }
+  /* selectpicker end */

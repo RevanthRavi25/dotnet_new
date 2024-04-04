@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+    <title>Sidebar sub menus</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='/package/jquery-3.6.0.min.js'></script>
+    <link rel='stylesheet' href='./package/bootstrap.min.css'>
+    <link rel='stylesheet' href='./package/bootstrap-select.min.css'>
+    <script src='/package/bootstrap.bundle.min.js'></script>
+    <script src='/package/bootstrap-select.min.js'></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="headerbar">
+        <div class="navbar_space">
+          <div class="header_part">
+            <div class="header_part_left">
+            <div class="header_part_right_menu">
+                <img src="../images/side_menu_open.png" onclick="changemaincon_full()" style="width:25px;cursor:pointer">
+              <!-- <mat-icon (click)="changemaincon_full()" fontIcon="menu"></mat-icon> -->
+            </div>
+            <div class="header_part_right_com"><img src="../images/isolve_blue.png"></div>
+            </div>
+            <div class="header_part_right">.
+                
+              <div class="header_part_right_user">  
+                <div class="profile_dropdown">
+                  <button class="profile_btn"><img src="../images/profile.png" style="width: 30px;"></button>
+                  <div class="dropdown-content">
+                  <a href="#">User name:<span> Thiru baskara sethupathi</span></a>
+                  <a href="#"><span>emp id:23123213213</span></a>
+                  <a href="#"><span> Manager</span></a>
+                  </div>
+                </div>
+              </div>
+              <div class="header_part_right_logout"><img src="../images/logout.png"></div>
+            </div>
+          </div>
+        </div>
+   
+        <main class="center_content">
+            <div class="content" id="scan_doc">
+            <div class="select_picker">
+                <select class="selectpicker" multiple data-live-search="true">
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                    <option data-tokens="ketchup mustard">Hot Dog, Fries and a Soda</option>
+                    <option data-tokens="mustard">Burger, Shake and a Smile</option>
+                    <option data-tokens="frosting">Sugar, Spice and all things nice</option>
+                  </select>
+                  
+            </div>
+            </div>
+            
+            </main>
+  </div>
+    <div class="headerbar_class sidebar">
+        <div class="logo-brand">
+            <div class="logo_big"><img src="../images/abhyudaya_logo.png"></div>
+            <div class="logo_small"><img src="../images/abhyudaya_logo_small.png"></div>
+        </div>
+        <ul class="nav-links" id="nav-links">
+            <li class="active" id="itemE1"  id="home">
+                <div class="dropdown-title"><a href="/index.html"><img src="../images/dashboard.png"><span
+                            class="link_name" id="home">Dashboard</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li>
+                <div class="dropdown-title" id="scan_doc"><a><img src="../images/dashboard.png"><span
+                            class="link_name">Scan Document</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li>
+                <div class="dropdown-title"><a href="/approval"><img src="../images/approval.png"><span
+                            class="link_name">Approval</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li>
+                <div class="dropdown-title"><a href="/status"><img src="../images/status.png"><span
+                            class="link_name">Status</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li id="master" onclick="showSubmenu('master')">
+                <div class="dropdown-title">
+                    <a><img src="../images/masters.png"><span
+                            class="link_name">Masters</span></a>
+                    <div class="cartflip"><img src="../images/arrow_cart.png"></div>
+                </div>
+                <ul class="sub-menu">
+                    <li><a href="#">User Management</a></li>
+                    <li><a href="#">Role Management</a></li>
+                    <li><a href="#">Account Type</a></li>
+                    <li><a href="#">Designation</a></li>
+                    <li><a href="#">Activity Type</a></li>
+                </ul>
+            </li>
+            <li>
+                <div class="dropdown-title"><a href="/workflow"><img src="../images/workflow.png"><span
+                            class="link_name">Workflow</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li>
+                <div class="dropdown-title"><a  href="/folder-access"><img
+                            src="../images/folder_access.png"><span class="link_name">Folder Access</span></a>
+                </div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+            <li>
+                <div class="dropdown-title"><a href="/reports"><img src="../images/reports.png"><span
+                            class="link_name">Reports</span></a></div>
+                <ul class="sub-menu blank"></ul>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

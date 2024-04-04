@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='/package/jquery-3.6.0.min.js'></script>
+    <link rel='stylesheet' href='./package/bootstrap.min.css'>
+    <link rel='stylesheet' href='./package/bootstrap-select.min.css'>
+    <script src='/package/bootstrap.bundle.min.js'></script>
+    <script src='/package/bootstrap-select.min.js'></script>
+</head>
+<body>
+    <div class="login_container">
+        <div class="row login_pos">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-6 col-xxl-6">
+                <div class="login_img">
+                    <img src="/images/lg1.png"
+                        style=" width: 80%;min-width: 485px;z-index: 99;display: flex;margin:auto auto 40px auto !important">
+    
+                    <img src="/images/lg2.png"
+                        style=" width: 50%;height: calc(100vh - 14px);padding: 20px 0px 20px 15px;position: fixed;">
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-5 col-xl-6 col-xxl-6">
+                <div class="login_panel">
+                    <div class="login_details">
+                        <div class="cpy_logo">
+                            <img src="images/abhyudaya_logo.png" style="width:150px">
+                        </div>
+                        <div class="login_header">Login</div>
+                      
+                            <div>
+                                <div class="login_username ">
+                                    <div class="themeinput">
+                                        <div>
+                                            <label>Username</label>
+                                            <input  placeholder="Username"  class="form-control" >
+                                           
+                                        </div>
+    
+                                    </div>
+    
+                                </div>
+                                <div class="login_password">
+                                    <div class="themeinput" style="position:relative">
+                                        <div>
+                                            <label>Password</label>
+                                            <input  type="password" placeholder="Password" [type]='passwd_type'
+                                                class="form-control"  />
+                                         
+                                        </div>
+                                        
+                                        <span class="pwd_icon"> <img style="width: 15px;" onclick="password_view()"      src="passwd_img" alt="" srcset=""    style="width:25px;position: absolute;top: 8px;right: 10px;cursor:pointer">
+                                            </span>
+                                    </div>
+                                </div>
+    
+    
+                            </div>
+                            <div class="login_button">
+                              
+                                <button class="login_btn" type="submit" >
+                                    Login  
+                                </button>
+                            </div>
+                        
+                        <div class="iSolve_logo">
+                            <div class="pwd_by">Powered by</div>
+                            <img src="/images/isolve_blue.png" alt="">
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5">
+        <select class="selectpicker" multiple aria-label="Default select example" data-live-search="true">
+          <option value="1">One</option>
+          <option value="2">Two</option>
+          <option value="3">Three</option>
+          <option value="4">Four</option>
+        </select>
+      </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+

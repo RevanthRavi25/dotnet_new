@@ -10,6 +10,18 @@
     <!-- <script src="./script.js"></script> -->
 
     <title>Sidebar sub menus</title>
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css" />
+    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
+<script src="/package/bootstrap-selectjs.min.js"></script>
+<link  href="/package/bootstrap-select.min.css"></link>
+
+ 
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -42,6 +54,14 @@
             </div>
           </div>
         </div>
+      
+        <main class="center_content">
+            <div class="content" id="home">
+                <h2>Welcome to the Home Page</h2>
+                <p>This is the home page content.</p>
+            </div>
+            
+            </main>
   </div>
     <div class="headerbar_class sidebar">
         <div class="logo-brand">
@@ -49,13 +69,13 @@
             <div class="logo_small"><img src="../images/abhyudaya_logo_small.png"></div>
         </div>
         <ul class="nav-links" id="nav-links">
-            <li class="active" id="itemE1">
-                <div class="dropdown-title"><a href="/dashboard"><img src="../images/dashboard.png"><span
-                            class="link_name">Dashboard</span></a></div>
+            <li class="active" id="itemE1"  id="home">
+                <div class="dropdown-title"><a href="/index.html"><img src="../images/dashboard.png"><span
+                            class="link_name" id="home">Dashboard</span></a></div>
                 <ul class="sub-menu blank"></ul>
             </li>
             <li>
-                <div class="dropdown-title"><a href="/scan"><img src="../images/dashboard.png"><span
+                <div class="dropdown-title" id="scan_doc"><a href="/scan_doc.html"><img src="../images/dashboard.png"><span
                             class="link_name">Scan Document</span></a></div>
                 <ul class="sub-menu blank"></ul>
             </li>
@@ -101,10 +121,6 @@
             </li>
         </ul>
     </div>
-    <h1>Componentes</h1>
-    <script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>
-
-    <script src="script.js"></script>
 </body>
 
 </html>
